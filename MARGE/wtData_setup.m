@@ -94,6 +94,6 @@ GG = sysKF.B(:,5:6);
 q_ = systems(zz);
 
 if ~isfolder(['./Data/q' num2str(systems(zz)) '_4_als_scaled/']);mkdir(['./Data/q' num2str(systems(zz)) '_4_als_scaled/']); end;
-save(['./Data/q' num2str(systems(zz)) '_4_als_scaled/M_sys_Noise_' num2str(seed-3) ],'AA','BB','CC','GG','x_hat','zy','c_scale','Qest','Rest','q_');
+save(['./Data/q' num2str(systems(zz)) '_4_als_scaled/M_sys_Noise_' num2str(seed) ],'AA','BB','CC','GG','x_hat','zy','c_scale','Qest','Rest','q_');
 end
 end
