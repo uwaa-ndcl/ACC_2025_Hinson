@@ -2,8 +2,8 @@ close all; clear all
 
 systems = [164 207 240 281];
 for zz = 1:length(systems)
-    datasets = dir(['./Data/q' num2str(systems(zz))]);
-for seed = 4:length(datasets)
+    datasets = dir(['./Data/q' num2str(systems(zz)) '/*.mat']);
+for seed = 1:length(datasets)
 %% Model
 dt = 1/50;
 
